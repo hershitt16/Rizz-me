@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rizz Me - Proposal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="min-h-screen flex items-center justify-center" style="background-color: #fbcfe8; background-image: url('https://images.pexels.com/photos/733852/pexels-photo-733852.jpeg'); background-size: cover; background-blend-mode: overlay;">
+  <div class="max-w-md w-full bg-white p-8 rounded-xl shadow-lg text-center">
+    <h2 class="text-2xl font-bold text-pink-600 mb-6" id="proposalText">Will you accept my proposal, <span id="usernameDisplay"></span>?</h2>
+    
+    <img id="proposalCat" 
+         src="https://images.pexels.com/photos/2071759/pexels-photo-2071759.jpeg" 
+         class="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-pink-300 transition-all duration-300">
+    
+    <div class="flex justify-center space-x-4 mb-6">
+      <button onclick="acceptProposal(true)" 
+              class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition flex items-center">
+        <i class="fas fa-heart mr-2"></i> Yes!
+      </button>
+      <button onclick="acceptProposal(false)" 
+              class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition flex items-center">
+        <i class="fas fa-times mr-2"></i> No
+      </button>
+    </div>
+    
+    <div id="responseMessage" class="hidden text-lg font-medium mb-4"></div>
+    
+    <button onclick="resetGame()" 
+            class="text-pink-600 hover:text-pink-800 underline mt-4">
+      <i class="fas fa-redo mr-2"></i> Start Over
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rizz Me - The Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen py-8" style="background-color: #fbcfe8; background-image: url('https://images.pexels.com/photos/733852/pexels-photo-733852.jpeg'); background-size: cover; background-blend-mode: overlay;">
+  <div class="max-w-md mx-auto px-4">
+    <!-- Step 1 -->
+    <div id="step1" class="current-step bg-white p-6 rounded-xl shadow-lg mb-6">
+      <img src="https://images.pexels.com/photos/982300/pexels-photo-982300.jpeg" 
+           class="w-24 h-24 object-cover rounded-full mx-auto mb-4 border-4 border-pink-300">
+      <p class="text-lg mb-4 text-center" id="rizzText1">"Hey <span id="usernameDisplay1"></span>, are you a magician? Because whenever I look at you, everyone else disappears!"</p>
+      <div class="rating mb-6 flex justify-center space-x-2">
+        <input type="radio" id="rate1-5" name="rate1" value="5" class="hidden" required>
+        <label for="rate1-5" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate1-4" name="rate1" value="4" class="hidden">
+        <label for="rate1-4" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate1-3" name="rate1" value="3" class="hidden">
+        <label for="rate1-3" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate1-2" name="rate1" value="2" class="hidden">
+        <label for="rate1-2" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate1-1" name="rate1" value="1" class="hidden">
+        <label for="rate1-1" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+      </div>
+      <button onclick="nextStep(1)" 
+              class="w-full bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        Next Rizz <i class="fas fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+
+    <!-- Step 2 -->
+    <div id="step2" class="hidden-step bg-white p-6 rounded-xl shadow-lg mb-6">
+      <img src="https://images.pexels.com/photos/982314/pexels-photo-982314.jpeg" 
+           class="w-24 h-24 object-cover rounded-full mx-auto mb-4 border-4 border-pink-300">
+      <p class="text-lg mb-4 text-center" id="rizzText2">"<span id="usernameDisplay2"></span>, if you were a cat, you'd be purr-fect!"</p>
+      <div class="rating mb-6 flex justify-center space-x-2">
+        <input type="radio" id="rate2-5" name="rate2" value="5" class="hidden" required>
+        <label for="rate2-5" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate2-4" name="rate2" value="4" class="hidden">
+        <label for="rate2-4" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate2-3" name="rate2" value="3" class="hidden">
+        <label for="rate2-3" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate2-2" name="rate2" value="2" class="hidden">
+        <label for="rate2-2" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate2-1" name="rate2" value="1" class="hidden">
+        <label for="rate2-1" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+      </div>
+      <button onclick="nextStep(2)" 
+              class="w-full bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        Next Rizz <i class="fas fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+
+    <!-- Step 3 -->
+    <div id="step3" class="hidden-step bg-white p-6 rounded-xl shadow-lg mb-6">
+      <img src="https://images.pexels.com/photos/982865/pexels-photo-982865.jpeg" 
+           class="w-24 h-24 object-cover rounded-full mx-auto mb-4 border-4 border-pink-300">
+      <p class="text-lg mb-4 text-center" id="rizzText3">"<span id="usernameDisplay3"></span>, are you made of catnip? Because you're driving me crazy!"</p>
+      <div class="rating mb-6 flex justify-center space-x-2">
+        <input type="radio" id="rate3-5" name="rate3" value="5" class="hidden" required>
+        <label for="rate3-5" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate3-4" name="rate3" value="4" class="hidden">
+        <label for="rate3-4" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate3-3" name="rate3" value="3" class="hidden">
+        <label for="rate3-3" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate3-2" name="rate3" value="2" class="hidden">
+        <label for="rate3-2" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+        <input type="radio" id="rate3-1" name="rate3" value="1" class="hidden">
+        <label for="rate3-1" class="text-2xl cursor-pointer"><i class="far fa-star text-yellow-400 hover:text-yellow-500"></i></label>
+      </div>
+      <button onclick="nextStep(3)" 
+              class="w-full bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+        See Proposal <i class="fas fa-heart ml-2"></i>
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rizz Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-pink-500 h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full relative">
+    <a href="landing.html" class="absolute top-2 left-2 text-pink-500 hover:text-pink-700">
+      <i class="fas fa-arrow-left"></i> Back
+    </a>
+    <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" 
+         alt="Cute Cat" class="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-pink-300">
+    <h1 class="text-3xl font-bold text-pink-600 mb-4 text-center">Rizz Me!</h1>
+    <form id="welcomeForm" class="space-y-4">
+      <div>
+        <input type="text" id="username" 
+               placeholder="Enter your name" 
+               class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 focus:border-transparent"
+               required>
+      </div>
+      <button type="submit" 
+              class="w-full bg-pink-600 text-white px-4 py-3 rounded-lg hover:bg-pink-700 transition duration-200 flex items-center justify-center">
+        <i class="fas fa-paw mr-2"></i> Start Rizzing!
+      </button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

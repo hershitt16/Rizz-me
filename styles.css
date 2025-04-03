@@ -1,0 +1,53 @@
+/* Step transitions */
+.current-step {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+  display: block;
+}
+
+.hidden-step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in;
+  display: none;
+}
+
+/* Star rating styling */
+.rating input:checked + label i,
+.rating label:hover i {
+  font-weight: 900; /* Solid star on hover/select */
+}
+
+.rating input:checked + label i {
+  color: #f59e0b; /* Darker yellow for selected */
+}
+
+/* Cat image animation */
+#proposalCat {
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+#proposalCat:hover {
+  transform: scale(1.05);
+}
+
+/* Response message animation */
+#responseMessage {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
